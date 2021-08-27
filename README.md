@@ -5,7 +5,7 @@ class employee
 {
      private String employeid;
      private String empname;
-     private String department;
+     private String empplace;
      public void read()
      {
         Scanner scan= new Scanner(System.in);
@@ -13,21 +13,13 @@ class employee
         employeid=scan.next();
         System.out.println("Enter the employee name");
         empname=scan.next();
-        System.out.println("Enter the department of an employee");
-        department=scan.next();
+        System.out.println("Enter the place of an employee");
+        empplace=scan.next();
         
      }
-
-   
-        
-
-        
-        
-
-
       public void display()  //displaying the calculating parameters
      {
-        System.out.println("Employeeid  :  "+employeid+"n"+"Employename  :  "+empname+"n"+"Employee department :  "+department);
+        System.out.println("Employeeid  :  "+employeid+"n"+"Employename  :  "+empname+"n"+"Employee place :  "+empplace);
      }
  
 }
